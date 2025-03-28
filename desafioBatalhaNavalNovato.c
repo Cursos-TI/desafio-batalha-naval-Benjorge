@@ -53,6 +53,7 @@ int main() {
     
 
     printf("  ***TABULEIRO BATALHA NAVAL***\n");
+    printf("    ");
     for (int i = 0; i < 1; i++)
     {
        for(int j = 0; j < 10; j++){
@@ -63,7 +64,11 @@ int main() {
     
     for (int i = 0; i < 10; i++)
     {
-        printf(" %d ", coluna[i]);
+        if(i < 9){
+        printf(" %d  ", coluna[i]);
+        } else {
+            printf(" %d ", coluna[i]);
+        };
         
        for (int j = 0; j < 10; j++)
        {
@@ -72,6 +77,8 @@ int main() {
        printf("\n");
        
     }
+
+    
     
 
     return 0;
